@@ -1,4 +1,4 @@
-// src/components/Card.js
+// Context
 import React, { useContext } from "react";
 import { RecipeContext } from "../Context/RecipeContext.js";
 
@@ -10,7 +10,7 @@ import {
   Container,
   Row,
   Col,
-  Button
+  Button,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -34,13 +34,15 @@ const Card = () => {
 
   const handleClick = () => {
     // Redirect to recipe page, when clicked
-  }
-  
+  };
+
   // Render recipes in Card format
   return (
     <Container className="mt-4">
       <Row className="justify-content-center">
+        {/* Mapping through the recipes array and render each recipe in Card format */}
         {recipes.map((recipe) => (
+          // uri is the unique identifier for each recipe
           <Col xs={12} md={6} lg={4} xl={3} key={recipe.uri} className="mb-4">
             <BootstrapCard>
               <BootstrapCard.Img
@@ -49,11 +51,14 @@ const Card = () => {
                 alt={recipe.label}
               />
               <BootstrapCard.Body>
+                {/* Recipe label */}
                 <BootstrapCard.Title>{recipe.label}</BootstrapCard.Title>
+                {/* Recipe cuisine type */}
                 <BootstrapCard.Subtitle className="mb-2 text-muted">
                   {recipe.cuisineType.join(", ").toUpperCase()}
                 </BootstrapCard.Subtitle>
                 <BootstrapCard.Text>
+                  {/* Recipe Source URL button*/}
                   <Button
                     variant="dark"
                     className="rounded-5 me-2"
@@ -63,6 +68,8 @@ const Card = () => {
                   >
                     Source
                   </Button>
+
+                  {/* Recipe Explore button --> Redirect to recipe page */}
                   <Button
                     variant="outline-dark"
                     className="rounded-5"
