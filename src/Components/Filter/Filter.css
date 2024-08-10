@@ -1,0 +1,7 @@
+.no-focus-outline-accordion .accordion-button:focus,
+.no-focus-outline-accordion .accordion-button:not(.collapsed) {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: none !important;
+}
+

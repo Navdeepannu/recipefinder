@@ -1,0 +1,26 @@
+/* Scroll-to-Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 1rem; /* Adjust as needed */
+    right: 1rem; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other content */
+    border-radius: 50%; /* Circular button */
+    width: 60px; /* Larger button size */
+    height: 60px; /* Larger button size */
+    background-color: #495057; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Arrow icon size */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    border: none; /* Remove default border */
+    outline: none; /* Remove outline on focus */
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #343a40; /* Lighter background on hover */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+  }
+  

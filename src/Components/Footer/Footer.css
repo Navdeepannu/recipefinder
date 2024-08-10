@@ -1,0 +1,82 @@
+/* Footer Container */
+.footer {
+  background-color: #393e41 !important;
+  color: #f6f7eb !important;
+  padding: 2rem 0;
+  margin-top: 3.1rem;
+  z-index: -1;
+}
+
+.footer .form-control::placeholder {
+    color: #f6f7eb;
+}
+
+.footer .form-control:focus::placeholder {
+    color: #f6f7eb;
+}
+
+.footer h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.footer h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f6f7eb;
+}
+
+.footer p {
+  font-size: 1rem; /* Standard font size for paragraphs */
+  line-height: 1.5; /* Line height for readability */
+  margin-bottom: 1rem; /* Margin below the paragraph */
+}
+
+.footer .form-control {
+  background-color: #495057; /* Darker background for form controls */
+  color: #f6f7eb; /* Light text color for input fields */
+  border: 1px solid #5a7797; /* Border color */
+}
+
+.footer .form-control:focus {
+  background-color: #6c757d; /* Slightly lighter background on focus */
+  color: #f6f7eb; /* Light text color on focus */
+  border-color: #ACC8E5; /* Blue border color on focus */
+  box-shadow: none; /* Remove default focus shadow */
+}
+
+.footer .btn-primary {
+  color: #112A46;
+  background-color: #ACC8E5;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.footer .btn-primary:hover {
+  background-color: #112A46;
+  color: #ACC8E5;
+}
+
+.footer .alert {
+  margin-bottom: 1rem; 
+}
+
+.footer .nav .nav-link {
+    color: #f6f7eb !important;
+    margin-left: -0.5rem;
+
+    &:hover {
+      color: #f6f7ebcc !important;
+
+    }
+}
+@media (max-width: 767px) {
+  .footer h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .footer h5 {
+    font-size: 1.125rem; /* Slightly smaller font size for mobile */
+  }
+}

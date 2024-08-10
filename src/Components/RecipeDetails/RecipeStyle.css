@@ -1,0 +1,39 @@
+.nutrition-label {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.nutrition-label h3 {
+  margin-bottom: 15px;
+}
+
+.nutrition-label p {
+  margin: 0 0 10px;
+}
+
+.nutrition-label ul {
+  padding-left: 20px;
+}
+
+.nutrition-label ul ul {
+  padding-left: 20px;
+}
+
+.nutrition-label li {
+  margin-bottom: 10px;
+}
+
+.head-nutrients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.source-btn {
+  
+}

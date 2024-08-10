@@ -1,0 +1,82 @@
+.customer-container {
+  margin-top: 2rem;
+}
+
+.custom-column {
+  margin-bottom: 1rem;
+  padding: 20px;
+}
+
+/* Custom card styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    min-width: 48px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+/* Button styling within the card */
+.custom-button {
+  color: #e7eaec;
+  background-color: #112740;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #112740ee;
+  }
+}
+
+.custom-outline-button {
+  background-color: #dbdfe1;
+  color: #112740;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #e7eaec9a;
+    color: #112740;
+  }
+}
+
+/* Responsive tweaks for better mobile view */
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 150px;
+  }
+}
+
+.favorite-button {
+  font-size: 1.5rem; /* Adjust size if needed */
+  border: none; /* Remove border */
+  background: transparent; /* Ensure background is transparent */
+  padding: 0; /* Remove padding */
+}
